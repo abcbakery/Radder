@@ -35,8 +35,8 @@ function ladder(_id, option = {}){
 
     // 선 그리기 전에 이름 쓰기
     function _name(){
-        ctx.font = "10px Arial";
-        ctx.fillText("박병곤  이재윤  이정호  김석규  박진수  서정덕  신용욱  임성철  한승표  김효진  조윤형");
+        ctx.font = "15px Arial";
+        ctx.fillText("박병곤  이재윤  이정호  김석규  박진수  서정덕  신용욱  임성철  한승표  김효진  조윤형", 50, 50);
     }
     
     //맨 처음 선을 그려줍니다
