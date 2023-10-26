@@ -43,6 +43,7 @@ function ladder(_id, option = {}){
             let startPosX = i / line * width + 1/line * width / 2
             ctx.font = "18px Arial"
             ctx.fillText(name[i], startPosX, 50)
+            ctx.fillText(gift[i], startPosX, 550)
         }
     }
     
