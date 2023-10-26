@@ -7,6 +7,9 @@ function ladder(_id, option = {}){
      
     let line = option.line || 11  //line
 
+    let name = new Array("박병곤","이재윤","이정호","김석규","박진수","서정덕","신용욱","임성철","한승표","김효진","조윤형") // 사다리 타기 이름 선언입니다.
+    let gift = new Array("1만원","1만원","1만원","1만원","2만원","2만원","2만원","2만원","2만원","2만원","2만원") // 사다리 타기 상품 선언입니다.
+
     let calback //콜백용 변수 입니다
     let data = [ ] //모든 데이터가 y축 기준으로 정렬된 배열 입니다
     let lineData = [ ]  //선이 그려지고 난 뒤에 보관되는 배열 입니다
@@ -35,8 +38,12 @@ function ladder(_id, option = {}){
 
     // 선 그리기 전에 이름 쓰기
     function _name(){
-        ctx.font = "15px Arial";
-        ctx.fillText("박병곤  이재윤  이정호  김석규  박진수  서정덕  신용욱  임성철  한승표  김효진  조윤형", 50, 50);
+
+        for(let i = 0 ; i < line ; i++){
+            let startPosX = i / line * width + 1/line * width / 2
+            ctx.font = "18px Arial"
+            ctx.fillText(name[i], startPosX, 50)
+        }
     }
     
     //맨 처음 선을 그려줍니다
