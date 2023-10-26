@@ -23,6 +23,7 @@ function ladder(_id, option = {}){
     let defaultLineColor = '#A6ABCA'
 
     _init()
+    _name()
     _drawLine()
 
     //초기화 함수 입니다
