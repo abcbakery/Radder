@@ -5,7 +5,7 @@ function ladder(_id, option = {}){
     let width = canvas.width
     let height = canvas.height
      
-    let line = option.line || 5  //line
+    let line = option.line || 11  //line
 
     let calback //콜백용 변수 입니다
     let data = [ ] //모든 데이터가 y축 기준으로 정렬된 배열 입니다
