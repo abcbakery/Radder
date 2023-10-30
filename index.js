@@ -26,7 +26,6 @@ function ladder(_id, option = {}){
     let defaultLineColor = '#A6ABCA'
 
     _init()
-    _name()
     _drawLine()
 
     //초기화 함수 입니다
@@ -35,20 +34,19 @@ function ladder(_id, option = {}){
         ctx.clearRect(0,0,width,height)
         ctx.restore()   
     }
+    
+    //맨 처음 선을 그려줍니다
+    function _drawLine(){
 
-    // 선 그리기 전에 이름 쓰기
-    function _name(){
-
+        
+         // 선 그리기 전에 이름 쓰기
         for(let i = 0 ; i < line ; i++){
             let startPosX = i / line * width + 1/line * width / 2 - 10
             ctx.font = "18px Arial"
             ctx.fillText(name[i], startPosX, 50)
             ctx.fillText(gift[i], startPosX, height * 0.95)
         }
-    }
-    
-    //맨 처음 선을 그려줍니다
-    function _drawLine(){
+        
         for(let i = 0 ; i < line ; i++){
             let startPosX = i / line * width + 1/line * width / 2
             ctx.save()
