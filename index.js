@@ -324,25 +324,25 @@ document.getElementById('btn4').addEventListener('click', (event) =>{
     lad.find(3, 'purple')
 })  
 document.getElementById('btn5').addEventListener('click', (event) =>{
-    lad.find(5, 'orange')
+    lad.find(4, 'orange')
 })  
 document.getElementById('btn6').addEventListener('click', (event) =>{
-    lad.find(6, 'mint')
+    lad.find(5, 'mint')
 })  
 document.getElementById('btn7').addEventListener('click', (event) =>{
-    lad.find(7, 'magenta')
+    lad.find(6, 'magenta')
 })  
 document.getElementById('btn8').addEventListener('click', (event) =>{
-    lad.find(8, 'pink')
+    lad.find(7, 'pink')
 }) 
 document.getElementById('btn9').addEventListener('click', (event) =>{
-    lad.find(9, 'pink')
+    lad.find(8, 'pink')
 })
 document.getElementById('btn10').addEventListener('click', (event) =>{
-    lad.find(10, 'pink')
+    lad.find(9, 'pink')
 })
 document.getElementById('btn11').addEventListener('click', (event) =>{
-    lad.find(11, 'yellow')
+    lad.find(10, 'yellow')
 }) 
 
 
