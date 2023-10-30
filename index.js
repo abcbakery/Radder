@@ -307,7 +307,7 @@ function ladder(_id, option = {}){
 }
 
 
-let lad = ladder('canvas')
+let lad = ladder('canvas', 11)
 
 
 
@@ -330,7 +330,7 @@ document.getElementById('btn6').addEventListener('click', (event) =>{
     lad.find(6, 'mint')
 })  
 document.getElementById('btn7').addEventListener('click', (event) =>{
-    lad.find(7, 'pink')
+    lad.find(7, 'magenta')
 })  
 document.getElementById('btn8').addEventListener('click', (event) =>{
     lad.find(8, 'pink')
