@@ -40,10 +40,10 @@ function ladder(_id, option = {}){
     function _name(){
 
         for(let i = 0 ; i < line ; i++){
-            let startPosX = i / line * width + 1/line * width / 2
+            let startPosX = i / line * width + 1/line * width / 2 - 10
             ctx.font = "18px Arial"
             ctx.fillText(name[i], startPosX, 50)
-            ctx.fillText(gift[i], startPosX, 550)
+            ctx.fillText(gift[i], startPosX, height * 0.95)
         }
     }
     
