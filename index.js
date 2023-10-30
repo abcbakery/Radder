@@ -6,6 +6,7 @@ function ladder(_id, option = {}){
     let height = canvas.height
      
     let line = option.line || 11  //line
+    let line = 11  //line
 
     let name = new Array("박병곤","이재윤","이정호","김석규","박진수","서정덕","신용욱","임성철","한승표","김효진","조윤형") // 사다리 타기 이름 선언입니다.
     let gift = new Array("1만원","1만원","1만원","1만원","2만원","2만원","2만원","2만원","2만원","2만원","2만원") // 사다리 타기 상품 선언입니다.
