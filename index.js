@@ -327,22 +327,22 @@ document.getElementById('btn5').addEventListener('click', (event) =>{
     lad.find(4, 'orange')
 })  
 document.getElementById('btn6').addEventListener('click', (event) =>{
-    lad.find(5, 'mint')
+    lad.find(5, "#48CFAD")
 })  
 document.getElementById('btn7').addEventListener('click', (event) =>{
-    lad.find(6, 'magenta')
+    lad.find(6, "#EC87C0")
 })  
 document.getElementById('btn8').addEventListener('click', (event) =>{
-    lad.find(7, 'pink')
+    lad.find(7, "#4FC1E9")
 }) 
 document.getElementById('btn9').addEventListener('click', (event) =>{
-    lad.find(8, 'pink')
+    lad.find(8, "#FFF176")
 })
 document.getElementById('btn10').addEventListener('click', (event) =>{
-    lad.find(9, 'pink')
+    lad.find(9, "#BA68C8")
 })
 document.getElementById('btn11').addEventListener('click', (event) =>{
-    lad.find(10, 'yellow')
+    lad.find(10, "#CDDC39")
 }) 
 
 
