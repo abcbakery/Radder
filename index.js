@@ -319,8 +319,27 @@ document.getElementById('btn4').addEventListener('click', (event) =>{
     lad.find(3, 'purple')
 })  
 document.getElementById('btn5').addEventListener('click', (event) =>{
-    lad.find(4, 'orange')
+    lad.find(5, 'orange')
 })  
+document.getElementById('btn6').addEventListener('click', (event) =>{
+    lad.find(6, 'mint')
+})  
+document.getElementById('btn7').addEventListener('click', (event) =>{
+    lad.find(7, 'pink')
+})  
+document.getElementById('btn8').addEventListener('click', (event) =>{
+    lad.find(8, 'pink')
+}) 
+document.getElementById('btn9').addEventListener('click', (event) =>{
+    lad.find(9, 'pink')
+})
+document.getElementById('btn10').addEventListener('click', (event) =>{
+    lad.find(10, 'pink')
+})
+document.getElementById('btn11').addEventListener('click', (event) =>{
+    lad.find(11, 'yellow')
+}) 
+
 
 lad.calback( (data, lineData)=>{
     console.log(data)
