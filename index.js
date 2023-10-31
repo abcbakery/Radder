@@ -51,7 +51,7 @@ function ladder(_id, option = {}){
         
         _name()
         
-        for(let i = 0 ; i < line ; i++){
+        for(let i = 0 ; i < 11 ; i++){
             let startPosX = i / line * width + 1/line * width / 2
             ctx.save()
             ctx.beginPath()
