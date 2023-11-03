@@ -192,7 +192,7 @@ function ladder(_id, option = {}){
             endBridge = {...endBridge, x: endBridge.object.x, y: y1}  //x축은 그려진 선 기준값을 대입 합니다
 
             //같은 선분 또는 옆 영역을 뛰어넘어가는 경우 등록하지 않습니다
-            if(startBridge.dataIndex == endBridge.dataIndex || Math.abs(startBridge.dataIndex - endBridge.dataIndex) > 2) {
+            if(startBridge.dataIndex == endBridge.dataIndex || Math.abs(startBridge.dataIndex - endBridge.dataIndex) > 1.5) {
                 isClicked = false
                 hoverPosition = {}
                 startBridge = null
