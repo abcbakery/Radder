@@ -173,8 +173,10 @@ function ladder(_id, option = {}){
     canvas.addEventListener('mousedown', (event) =>{
         if(!ctx) return
         isClicked = true
-        let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
-        let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop
+        let x1 = event.clientX 
+        let y1 = event.clientY
+        //let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
+        //let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop      
         if(isClicked){
             let startTarget = _isInSide(x1,y1)  //시작점을 기록 합니다
             startBridge = {...startTarget, x: startTarget.object.x, y: y1, originX:x1, originY : y1}  //x축은 그려진 선 기준값을 대입 합니다
@@ -186,8 +188,10 @@ function ladder(_id, option = {}){
         if(!ctx) return
         hoverPosition = {}
         if(isClicked){  //마우스가 다운된 상태의 조건이 충족하면,
-            let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
-            let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop            
+            //let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
+            //let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop    
+            let x1 = event.clientX
+            let y1 = event.clientY           
             let endBridge =  _isInSide(x1,y1)  //가장 마지막의 선 지점값을 가져 옵니다
             endBridge = {...endBridge, x: endBridge.object.x, y: y1}  //x축은 그려진 선 기준값을 대입 합니다
 
