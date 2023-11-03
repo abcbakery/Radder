@@ -254,9 +254,9 @@ function ladder(_id, option = {}){
         _drawDataLine()        
 
         while(stop){
-           // if(bk >= 1433) {  //혹시모를 무한재귀 대비 브레이킹 구간 입니다
-           //     stop = false
-           //  }
+           if(bk >= 1433) {  //혹시모를 무한재귀 대비 브레이킹 구간 입니다
+                stop = false
+            }
             let start = data[mainCursor][innerCursor]
             let end
             if(start.linkIdx != null && historyIndex.filter( arg=> arg == start.linkIdx) == 0){ //링크가 있는 지점
