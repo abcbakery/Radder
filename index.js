@@ -151,8 +151,10 @@ function ladder(_id, option = {}){
     canvas.addEventListener('mousemove', (event) =>{
         if(!ctx) return
         if(isClicked){ //마우스가 Down인 경우에만 동작하여 hover 효과를 그려 줍니다
-            let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
-            let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop            
+            let x1 = event.clientX
+            let y1 = event.clientY
+            //let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
+            //let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop   
             _init()
             _drawDataLine()
             ctx.save()
