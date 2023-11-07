@@ -177,6 +177,7 @@ function ladder(_id, option = {}){
         let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop      
         if(isClicked){
             let startTarget = _isInSide(x1,y1)  //시작점을 기록 합니다
+            ctx.fillText('('+x1+','+y1+')', x1+10, y1+10)
             startBridge = {...startTarget, x: startTarget.object.x, y: y1, originX:x1, originY : y1}  //x축은 그려진 선 기준값을 대입 합니다
         }        
     })    
