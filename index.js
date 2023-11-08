@@ -194,14 +194,14 @@ function ladder(_id, option = {}){
             endBridge = {...endBridge, x: endBridge.object.x, y: y1}  //x축은 그려진 선 기준값을 대입 합니다
 
             //같은 선분 또는 옆 영역을 뛰어넘어가는 경우 등록하지 않습니다
-            if(startBridge.dataIndex == endBridge.dataIndex || Math.abs(startBridge.dataIndex - endBridge.dataIndex) > 1.5) {
-                isClicked = false
-                hoverPosition = {}
-                startBridge = null
-                _init()
-                _drawDataLine()
-                return
-            }
+          //  if(startBridge.dataIndex == endBridge.dataIndex || Math.abs(startBridge.dataIndex - endBridge.dataIndex) > 1.5) {
+         //       isClicked = false
+         //       hoverPosition = {}
+         //       startBridge = null
+          //      _init()
+          //      _drawDataLine()
+           //     return
+         //   }
 
             //첫 마우스 다운 지점에서 마지막 마우스 업 지점까지의 거리를 lineData 배열에 담아둡니다
             let bridgeIdx = _makeid(50)
