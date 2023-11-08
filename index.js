@@ -153,6 +153,7 @@ function ladder(_id, option = {}){
         if(isClicked){ //마우스가 Down인 경우에만 동작하여 hover 효과를 그려 줍니다
             let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
             let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop   
+            ctx.fillText('('+x1+','+y1+')', x1+10, y1+10) 
             _init()
             _drawDataLine()
             ctx.save()
@@ -177,7 +178,7 @@ function ladder(_id, option = {}){
         let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop      
         if(isClicked){
             let startTarget = _isInSide(x1,y1)  //시작점을 기록 합니다
-            ctx.fillText('('+x1+','+y1+')', x1+10, y1+10)
+            ctx.fillText('('+x1+','+y1+')', x1+10, y1+10)  // 시작점 location (for Debug)
             startBridge = {...startTarget, x: startTarget.object.x, y: y1, originX:x1, originY : y1}  //x축은 그려진 선 기준값을 대입 합니다
         }        
     })    
