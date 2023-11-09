@@ -99,7 +99,7 @@ function ladder(_id, option = {}){
             ctx.strokeStyle = defaultLineColor
             ctx.moveTo(startBridge.x, startBridge.y)
             ctx.lineTo(endBridge.x, endBridge.y)
-            ctx.fillText('('+endBridge.x+','+'endBridge.y'+')', endBridge.x+10 , endBridge.y+10)
+            // ctx.fillText('('+endBridge.x+','+'endBridge.y'+')', endBridge.x+10 , endBridge.y+10) //미출력
             ctx.stroke()
             ctx.closePath()
             ctx.restore()              
@@ -154,6 +154,7 @@ function ladder(_id, option = {}){
         if(isClicked){ //마우스가 Down인 경우에만 동작하여 hover 효과를 그려 줍니다
             let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
             let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop   
+            ctx.fillText('('+x1+','+y1+')', x1+10, y1+10)
             _init()
             _drawDataLine()
             ctx.save()
