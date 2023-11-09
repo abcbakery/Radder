@@ -154,7 +154,7 @@ function ladder(_id, option = {}){
         if(isClicked){ //마우스가 Down인 경우에만 동작하여 hover 효과를 그려 줍니다
             let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
             let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop   
-            ctx.fillText('('+x1+','+y1+')', x1+10, y1+10)
+            ctx.fillText('moving!!!', 500, 500)
             _init()
             _drawDataLine()
             ctx.save()
