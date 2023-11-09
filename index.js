@@ -59,6 +59,7 @@ function ladder(_id, option = {}){
             ctx.strokeStyle = defaultLineColor
             ctx.moveTo(startPosX, height * 0.1)
             ctx.lineTo(startPosX, height * 0.9)
+            ctx.fillText(startPosX.toFixed(), startPosX+10, height * 0.1)
             ctx.stroke()
             ctx.closePath()
             ctx.restore()  
@@ -85,7 +86,6 @@ function ladder(_id, option = {}){
             ctx.strokeStyle = defaultLineColor
             ctx.moveTo(startPosX, height * 0.1)
             ctx.lineTo(startPosX, height * 0.9)
-            ctx.fillText(startPosX, startPosX+10, height * 0.1)
             ctx.stroke()
             ctx.closePath()
             ctx.restore()  
