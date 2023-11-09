@@ -39,7 +39,7 @@ function ladder(_id, option = {}){
     function _name(){
         // 선 그리기 전에 이름 쓰기
         for(let i = 0 ; i < line ; i++){
-            let startPosX = i / line * width + 1/line * width / 2 - 10
+            let startPosX = i / line * width + 1/line * width / 2 - 15
             ctx.font = "18px Arial"
             ctx.fillText(name[i], startPosX, 50)
             ctx.fillText(gift[i], startPosX, height * 0.95)
@@ -99,6 +99,7 @@ function ladder(_id, option = {}){
             ctx.strokeStyle = defaultLineColor
             ctx.moveTo(startBridge.x, startBridge.y)
             ctx.lineTo(endBridge.x, endBridge.y)
+            ctx.fillText('('+endBridge.x+','+'endBridge.y'+')', endBridge.x+10 , endBridge.y+10)
             ctx.stroke()
             ctx.closePath()
             ctx.restore()              
@@ -186,7 +187,7 @@ function ladder(_id, option = {}){
     canvas.addEventListener('mouseup', (event) =>{
         if(!ctx) return
         hoverPosition = {}
-        ctx.fillText('mouse up!!!!', event.clientX , event.clientY)
+        // ctx.fillText('mouse up!!!!', event.clientX , event.clientY)   / Debugging : 출력 X
         if(isClicked){  //마우스가 다운된 상태의 조건이 충족하면,
             let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
             let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop    
