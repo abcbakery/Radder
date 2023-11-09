@@ -189,6 +189,7 @@ function ladder(_id, option = {}){
         if(!ctx) return
         hoverPosition = {}
         // ctx.fillText('mouse up!!!!', event.clientX , event.clientY)   / Debugging : 출력 X
+        ctx.fillText('here ??!!', 106, 300)
         if(isClicked){  //마우스가 다운된 상태의 조건이 충족하면,
             let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
             let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop    
