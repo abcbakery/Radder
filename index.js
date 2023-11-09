@@ -153,7 +153,6 @@ function ladder(_id, option = {}){
         if(isClicked){ //마우스가 Down인 경우에만 동작하여 hover 효과를 그려 줍니다
             let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
             let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop   
-            ctx.fillText('('+x1+','+y1+')', x1+10, y1+10) 
             _init()
             _drawDataLine()
             ctx.save()
@@ -206,6 +205,7 @@ function ladder(_id, option = {}){
 
             //첫 마우스 다운 지점에서 마지막 마우스 업 지점까지의 거리를 lineData 배열에 담아둡니다
             let bridgeIdx = _makeid(50)
+            ctx.fillText("makeid = " + bridgeIdx, x1+10, y1+10)
             startBridge.linkIdx = bridgeIdx
             endBridge.linkIdx = bridgeIdx
             data[startBridge.dataIndex].push(startBridge)  //데이터 배열에도 넣습니다
