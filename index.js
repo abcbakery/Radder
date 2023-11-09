@@ -154,7 +154,7 @@ function ladder(_id, option = {}){
         if(isClicked){ //마우스가 Down인 경우에만 동작하여 hover 효과를 그려 줍니다
             let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
             let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop   
-            ctx.fillText('moving!!!', 500, 500)
+            ctx.fillText('moving!!!', 56, 300)
             _init()
             _drawDataLine()
             ctx.save()
@@ -194,6 +194,7 @@ function ladder(_id, option = {}){
             let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop    
             let endBridge =  _isInSide(x1,y1)  //가장 마지막의 선 지점값을 가져 옵니다
             ctx.fillText('('+ endBridge.x1+','+endBridge.y1+')', x1+10, y1+10)
+            ctx.fillText('mouse up!!!', 106, 300)
             endBridge = {...endBridge, x: endBridge.object.x, y: y1}  //x축은 그려진 선 기준값을 대입 합니다
 
             //같은 선분 또는 옆 영역을 뛰어넘어가는 경우 등록하지 않습니다
