@@ -196,7 +196,7 @@ function ladder(_id, option = {}){
             let x1 = event.clientX - canvas.parentElement.offsetLeft || canvas.offsetLeft
             let y1 = event.clientY - canvas.parentElement.offsetTop || canvas.offsetTop    
             let endBridge =  _isInSide(x1,y1)  //가장 마지막의 선 지점값을 가져 옵니다
-            ctx.fillText('('+ endBridge.x1+','+endBridge.y1+')', x1+10, y1+10)
+            ctx.fillText('('+ endBridge.object.x+','+endBridge.object.y+')', x1+10, y1+10)
             ctx.fillText('mouse up!!!', 106, 300)
             endBridge = {...endBridge, x: endBridge.object.x, y: y1}  //x축은 그려진 선 기준값을 대입 합니다
 
